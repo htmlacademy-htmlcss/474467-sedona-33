@@ -22,6 +22,13 @@
     background-color: #ffffff;
     color: #000000;
     font-weight: 400;
+    margin: 0;
+    padding: 0;
+    
+  }
+  /* main */
+  .main{
+    flex-grow: 1;
   }
 *, 
 ::after,
@@ -31,6 +38,10 @@ box-sizing: border-box;
 
 html {
 box-sizing: border-box;
+height: 100%;
+position: absolute;
+margin-left: 40px;
+margin-right: 40px;
 }
 
 img {
@@ -53,38 +64,88 @@ object-position: center;
 a{
     text-decoration: none;
     color: #000000;
+    white-space: nowrap;
 }
 ul{
     list-style-type: none;
 }
-/* Menu */
+/* menu */
+.navigation{
+    margin: 0;
+}
+.menu{  
+    padding: 20;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menu-user{
+    margin-left: 866px;
+    margin-left: 70px;
+    
+}
 .menu-item{
     font-size: 20px;
     line-height: 26px;
 }
 .menu-item-button{
     background-color: #756257;
-    width: 160px;
-    height: 37px;
     border-radius: 4px;
 }
-/* Index */
+/* index */
+.sedona-img{
+    margin-top: 65px;
+}
+.sedona-img-block1{
+    background-image: url("../images/indexbackground.jpg");
+    background-repeat: no-repeat;
+}
+.sedona-img-block2{
+    background-image: url("../images/whitevector.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    min-height: 57px;
+    min-width: 1200px;
+    margin-top: -57px;
+    margin-left: 0;
+    margin-right: 0px;
+   
+}
+.sedona-img img{
+    margin-top: 51px;
+    margin-left: 371px;
+    margin-bottom: 81px;
+}
+
 .sedona-description{
     text-align: center;
+    padding-top: 63px;
+    padding-left: 240px;
+    padding-right: 240px;
+    padding-bottom: 0px;
+
 }
-.sedona-description-title{
+.sedona-description h2{
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase; 
     font-weight: 700;
 }
-.sedona-description-text{
+.sedona-description p{
     font-size: 22px;
     line-height: 36px;
+    text-align: center;
 }
 .reason{
     text-align: center;
 }
+.reason-list-more{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+
 .canvas-blue{
     background-color: #83B3D3;
     color: #ffffff;
@@ -95,7 +156,9 @@ ul{
     line-height: 28px;
     font-weight: 700;
     text-transform: uppercase; 
+
 }
+
 .search{
     text-align: center;
 }
@@ -111,57 +174,93 @@ ul{
 }
 .search-button{
     background-color: #756257;
-    width: 575px;
-    height: 60px;
     border-radius: 10px;
     font-size: 20px;
     line-height: 36px;
 
 }
-/* Supscribe */
+/* subscribe */
 .subscribe {
     text-align: center;
-}
-.button-subscribe{
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    line-height: 26px;
-    border-radius: 0px 10px 10px 0px;
+        
 }
 .subscribe-background{
     background-image: url("../images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1200px;
-    height: 411px;
     color: #ffffff;
+    padding-top: 94px;
+    
 }
+.subscribe-form{
+    display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 94px;
+}
+.subscribe-input{
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 22px;
+    color:#000000;
+    font-size: 18px;
+    line-height: 26px;
+
+}
+.button-subscribe{
+    font-size: 20px;
+    line-height: 26px;
+    border-radius: 0px 10px 10px 0px;
+}
+
 .subscribe-title{
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase; 
     font-weight: 700;
+   margin-left: 240px;
+    
 }
 .subscribe-text{
     font-size: 22px;
     line-height: 26px;
+    margin-left: 240px;
 }
-/* subscribe Index */
+
 .filter-section {
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/catalogbackground.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1200px;
-    height: 408px;
     color: #ffffff;
     line-height: 23px;
+    
 }
 /* Contacts */
+.contacts {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 107px 720px 115px;
+}
+.social-list{
+    display: grid;
+    grid-template-columns: 18px 10px 20px;
+    margin-left: 72px;
+    margin-top: 50px;
+}
+
+.social-link-facebook{
+    margin-top: 49px;
+}
+
 .contacts-phone{
     font-size: 40px;
     line-height: 40px;
-    text-align: center;
+    margin: 40px 240px;
+}
+.logo-html{
+    margin-top: 42px;
+    margin-right: 72px;
+    margin-bottom: 44px;
 }
 /* Catalog */
 .page-title{
@@ -183,13 +282,9 @@ ul{
     font-weight: 700;
 }
 .filter-submit{
-    width: 160px;
-    height: 48px;
     line-height: 21px;
 }
 .filter-reset{
-    width: 160px;
-    height: 23px;
     line-height: 23px;
     background: transparent;
     outline: none;
@@ -200,6 +295,7 @@ ul{
     font-weight: 700;
     text-transform: uppercase; 
 }
+/* hotels */
 .hotels-title{
     font-size: 24px;
     line-height: 31px;
@@ -212,36 +308,32 @@ ul{
     line-height: 24px;
 }
 .hotels-button-detail{
-    width: 133.01px;
-    height: 37px;
+    
     background-color: #756257;
     border-radius: 4px;
     line-height: 21px;
 }
 .hotels-button-favourites{
-    width: 140.94px;
-    height: 37px;
+
     border-radius: 4px;
     line-height: 21px;
 
 }
 .hotels-button-favourites-current{
-    width: 140.94px;
-    height: 37px;
     border-radius: 4px;
     line-height: 21px;
     background-color: #7DB54F;
 }
+/* upload */
 .upload-button{
     width: 619.83px;
-    height: 60px;
     line-height: 26px;
     font-size: 20px;
     border-radius: 4px;
 }
+/* pagination */
 .pagination-button{
     width: 55px;
-    height: 55px;
     border-radius: 4px;
     line-height: 26px;
     font-size: 20px;
