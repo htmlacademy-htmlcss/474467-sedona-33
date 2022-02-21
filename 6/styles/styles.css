@@ -90,7 +90,6 @@ fieldset{
     display: flex;
     padding-left: 70px;
     padding-right: 70px;
-    max-height: 65px;
 }
 .logo-link{
     display: block;
@@ -107,11 +106,13 @@ fieldset{
     margin-left: 299px; 
     display: flex;
 }
+.menu li {
+    margin-right: 34px;
+}
 .menu-link{
     font-size: 20px;
     line-height: 26px;
     color: #000000;
-    margin-left: 34px;
 }
 
 .menu-item-button{
@@ -126,7 +127,7 @@ fieldset{
                 url("../images/indexbackground.jpg");  
     background-size: 100%, cover;
     background-repeat: no-repeat, no-repeat;
-    background-position:  0 428px, 0 0;
+    background-position: bottom, 0 0;
 }
 .sedona-img img{
     padding-top: 51px;
@@ -501,6 +502,7 @@ fieldset{
     padding-bottom: 17px;
     padding-top: 17px;
     margin: 0 auto;
+    display: block;
 }
 .hotels-upload{
     padding-top: 30px;
@@ -529,6 +531,9 @@ fieldset{
     flex-wrap: nowrap;
     justify-content: flex-start;
 }
+.pagination-item{
+    padding-left: 8px;
+}
 .pagination-button{
     display: flex;
     align-items: center;
@@ -543,7 +548,6 @@ fieldset{
     text-decoration: none;
     text-transform: uppercase; 
     border-radius: 4px;
-    margin-left: 8px;
 }
 .pagination-button-current{
     background-color: #F2F2F2;
