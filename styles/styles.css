@@ -778,3 +778,15 @@ fieldset{
     color:#000000;
     margin-left: 0px;
 }
+.pagination-button:hover{
+    background-color: #68A2CA;
+}
+.pagination-button:active{
+    background-color: #68A2CA;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+.pagination-button:focus{
+    background-color:  #68A2CA;
+    border: 3px solid #756257;
+}
