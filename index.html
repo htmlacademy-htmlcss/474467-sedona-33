@@ -178,5 +178,61 @@
                       </a>
           </section>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+            <section class="modal-content">
+              <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            </section>
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+              <svg class="close-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 4.29231L15.7077 3L10 8.70769L4.29231 3L3 4.29231L8.70769 10L3 15.7077L4.29231 17L10 11.2923L15.7077 17L17 15.7077L11.2923 10L17 4.29231Z"/>
+                </svg>                
+            </button>
+            <div class="date-container">
+                <form class="arrival-date-form date-form">
+                  <label for="arrival-date">
+                    Дата заезда:
+                  </label>
+                  <input name="arrival-date" type="date" value="" id="arrival-date" min="2022-03-01">
+                </form>
+                <form class="departure-date-form date-form">
+                  <label for="departure-date">
+                    Дата выезда:
+                  </label>
+                  <input name="departure-date" type="date" value="" id="departure-date" min="2022-03-01">
+                </form>
+            </div>
+            <div class="guest-container">
+              <form class="adult-form guest-form">
+                <label for="adult-guest" class="adult-label">
+                Взрослые:
+                </label>
+                <input name="adult-guest" type="number" value="" id="adult-guest" min="0">
+              </form>
+              <form class="children-form guest-form">
+                <span class="children-label">
+                      <label for="children-guest" class="children-guest-label">
+                       Дети:
+                      </label>
+                      <span class="tooltip">
+                        <button class="tooltip-toggle" type="button">
+                          <svg class="info-icon" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"/>
+                          </svg>
+                        </button>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                          Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                        </span>
+                      </span>
+                </span>
+                <input name="children-guest" type="number" value="" id="children-guest" min="0">
+              </form>
+          </div>
+          <div class="modal-search">
+            <a class="modal-search-button" href="#">Найти</a>
+          </div>
+      </div>
+    </div>
   </body>
 </html>
