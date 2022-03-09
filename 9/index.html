@@ -26,7 +26,7 @@
                 <ul class="menu-user list-reset">
                   <li class="menu-item">
                     <a class="menu-user-icon menu-user-icon-search" href="#">
-                      <svg width="42" height="66" viewBox="0 0 42 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="search-logo" width="42" height="66" viewBox="0 0 42 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M30.0257 40.05L26.3152 36.35C27.318 35.05 28.02 33.35 28.02 31.45C28.02 27.05 24.4098 23.45 19.9973 23.45C15.5848 23.45 11.9746 27.15 11.9746 31.55C11.9746 35.95 15.5848 39.55 19.9973 39.55C21.8024 39.55 23.5072 38.95 24.9112 37.85L28.6217 41.55L30.0257 40.05ZM19.9973 37.55C16.6879 37.55 13.9803 34.85 13.9803 31.55C13.9803 28.25 16.6879 25.55 19.9973 25.55C23.3067 25.55 26.0143 28.25 26.0143 31.55C26.0143 34.85 23.3067 37.55 19.9973 37.55Z"/>
                         </svg>                        
                     </a>
@@ -146,17 +146,24 @@
           <ul class="social-list list-reset">
             <li class="social-item"> 
               <a class="social-link social-link-twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">
-                <img src="images/twitter.svg" alt="Twitter" height="15" width="18">
+                <svg class="twitter-logo" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.6 0.200056C13.4 -0.299944 14.8 0.500056 15.4 1.40006C16.1 1.20006 16.8 0.900056 17.5 0.700056C17.5 1.60006 16.9 2.20006 16.6 2.50006C17.3 2.60006 18 1.90006 18 1.90006C17.8 2.90006 16.9 3.70006 16.3 3.90006C16.1 10.7001 13 15.1001 5.7 15.0001C5.1 15.0001 5.8 15.0001 5.2 15.0001C4.8 15.0001 0.8 14.5001 0 13.1001C2.4 13.3001 4.1 12.7001 5 11.9001C4 11.6001 2.1 11.5001 1.8 9.00006C2.2 9.10006 2.4 9.20006 3.1 9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006 0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z"/>
+                  </svg>
               </a>
             </li>
             <li class="social-item"> 
              <a class="social-link social-link-facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
-                <img src="images/facebook.svg" alt="Facebook" height="16" width="10" >
+              <svg class="facebook-logo" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z"/>
+                </svg>
               </a>
             </li>
             <li class="social-item">
               <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-                <img src="images/youtube.svg" alt="YouTube" height="16" width="20">
+                <svg class="youtube-logo" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z"/>
+                  </svg>
+                  
               </a> 
             </li>
           </ul>
@@ -179,61 +186,84 @@
                       </a>
           </section>
     </footer>
-    <div class="modal-container modal-container-close">
+    <section class="modal-container modal-container-close">
       <div class="modal modal-auth">
-            <section class="modal-content">
-              <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            </section>
-            <button class="modal-close-button">
-              <span class="visually-hidden">Закрыть</span>
-              <svg class="close-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17 4.29231L15.7077 3L10 8.70769L4.29231 3L3 4.29231L8.70769 10L3 15.7077L4.29231 17L10 11.2923L15.7077 17L17 15.7077L11.2923 10L17 4.29231Z"/>
-                </svg>                
-            </button>
-            <div class="date-container">
-                <form class="arrival-date-form date-form">
-                  <label for="arrival-date">
-                    Дата заезда:
-                  </label>
-                  <input name="arrival-date" type="date" value="" id="arrival-date" min="2022-03-01">
-                </form>
-                <form class="departure-date-form date-form">
-                  <label for="departure-date">
-                    Дата выезда:
-                  </label>
-                  <input name="departure-date" type="date" value="" id="departure-date" min="2022-03-01">
-                </form>
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg class="close-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 4.29231L15.7077 3L10 8.70769L4.29231 3L3 4.29231L8.70769 10L3 15.7077L4.29231 17L10 11.2923L15.7077 17L17 15.7077L11.2923 10L17 4.29231Z" />
+          </svg>
+        </button>
+
+        <form action="http://echo.htmlacademy.ru" method="GET">
+
+          <div class="form-container">
+            <label class="form-label" for="arrival-date">Дата заезда:</label>
+            <div class="form-container-input">
+              <input class="form-input" name="arrival-date" type="text" value="27 апреля 2020" id="arrival-date">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z" fill="black" />
+                <path d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z" fill="black" />
+                <path d="M7.5 10C7.8 10 8 9.8 8 9.5C8 9.2 7.8 9 7.5 9C7.2 9 7 9.2 7 9.5C7 9.8 7.2 10 7.5 10Z" fill="black" />
+                <path d="M9.5 10C9.8 10 10 9.8 10 9.5C10 9.2 9.8 9 9.5 9C9.2 9 9 9.2 9 9.5C9 9.8 9.2 10 9.5 10Z" fill="black" />
+                <path d="M5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11Z" fill="black" />
+                <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z" fill="black" />
+                <path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z" fill="black" />
+                <path d="M7.5 11C7.2 11 7 11.2 7 11.5C7 11.8 7.2 12 7.5 12C7.8 12 8 11.8 8 11.5C8 11.2 7.8 11 7.5 11Z" fill="black" />
+                <path d="M9.5 11C9.2 11 9 11.2 9 11.5C9 11.8 9.2 12 9.5 12C9.8 12 10 11.8 10 11.5C10 11.2 9.8 11 9.5 11Z" fill="black" />
+                <path d="M11.5 10C11.8 10 12 9.8 12 9.5C12 9.2 11.8 9 11.5 9C11.2 9 11 9.2 11 9.5C11 9.8 11.2 10 11.5 10Z" fill="black" />
+                <path d="M11.5 11C11.2 11 11 11.2 11 11.5C11 11.8 11.2 12 11.5 12C11.8 12 12 11.8 12 11.5C12 11.2 11.8 11 11.5 11Z" fill="black" />
+              </svg>
+              <p class="message massege-error">Мы не можем отправить вас в прошлое.</p>
             </div>
-            <div class="guest-container">
-              <form class="adult-form guest-form">
-                <label for="adult-guest" class="adult-label">
-                Взрослые:
-                </label>
-                <input name="adult-guest" type="number" value="" id="adult-guest" min="0">
-              </form>
-              <form class="children-form guest-form">
-                <span class="children-label">
-                      <label for="children-guest" class="children-guest-label">
-                       Дети:
-                      </label>
-                      <span class="tooltip">
-                        <button class="tooltip-toggle" type="button">
-                          <svg class="info-icon" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z"/>
-                          </svg>
-                        </button>
-                        <span class="tooltip-text" role="tooltip" id="tooltip-label">
-                          Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                        </span>
-                      </span>
-                </span>
-                <input name="children-guest" type="number" value="" id="children-guest" min="0">
-              </form>
           </div>
-          <div class="modal-search">
-            <a class="modal-search-button" href="#">Найти</a>
+          <div class="form-container">
+            <label class="form-label" for="departure-date">Дата выезда:</label>
+            <div class="form-container-input">
+              <input class="form-input" name="departure-date" type="text" value="1 сентября 2021" id="departure-date">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z" fill="black" />
+                <path d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z" fill="black" />
+                <path d="M7.5 10C7.8 10 8 9.8 8 9.5C8 9.2 7.8 9 7.5 9C7.2 9 7 9.2 7 9.5C7 9.8 7.2 10 7.5 10Z" fill="black" />
+                <path d="M9.5 10C9.8 10 10 9.8 10 9.5C10 9.2 9.8 9 9.5 9C9.2 9 9 9.2 9 9.5C9 9.8 9.2 10 9.5 10Z" fill="black" />
+                <path d="M5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11Z" fill="black" />
+                <path d="M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z" fill="black" />
+                <path d="M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z" fill="black" />
+                <path d="M7.5 11C7.2 11 7 11.2 7 11.5C7 11.8 7.2 12 7.5 12C7.8 12 8 11.8 8 11.5C8 11.2 7.8 11 7.5 11Z" fill="black" />
+                <path d="M9.5 11C9.2 11 9 11.2 9 11.5C9 11.8 9.2 12 9.5 12C9.8 12 10 11.8 10 11.5C10 11.2 9.8 11 9.5 11Z" fill="black" />
+                <path d="M11.5 10C11.8 10 12 9.8 12 9.5C12 9.2 11.8 9 11.5 9C11.2 9 11 9.2 11 9.5C11 9.8 11.2 10 11.5 10Z" fill="black" />
+                <path d="M11.5 11C11.2 11 11 11.2 11 11.5C11 11.8 11.2 12 11.5 12C11.8 12 12 11.8 12 11.5C12 11.2 11.8 11 11.5 11Z" fill="black" />
+              </svg>
+              <p class="message">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
           </div>
+
+          <div class="guest-container">
+            <div class="adult-container">
+              <label class="form-label" for="adult-guest">Взрослые:</label>
+              <input class="form-input-guest" name="adult-guest" type="number" value="2" id="adult-guest" min="1">
+            </div>
+            <div class="children-container">
+              <label for="children-guest" class="children-guest-label">Дети:</label>
+              <div class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <svg class="info-icon" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" />
+                  </svg>
+                </button>
+                <p class="tooltip-text" role="tooltip" id="tooltip-label">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </p>
+              </div>
+              <input class="form-input-guest" name="children-guest" type="number" value="1" id="children-guest" min="0">
+            </div>
+          </div>
+          <button class="modal-search-button" type="submit">Найти</button>
+
+        </form>
       </div>
-    </div>
+</section>
   </body>
 </html>
