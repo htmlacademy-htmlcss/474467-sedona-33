@@ -25,7 +25,7 @@
                 <ul class="menu-user list-reset">
                   <li class="menu-item">
                     <a class="menu-user-icon menu-user-icon-search" href="#">
-                      <svg width="42" height="66" viewBox="0 0 42 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="search-logo" width="42" height="66" viewBox="0 0 42 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M30.0257 40.05L26.3152 36.35C27.318 35.05 28.02 33.35 28.02 31.45C28.02 27.05 24.4098 23.45 19.9973 23.45C15.5848 23.45 11.9746 27.15 11.9746 31.55C11.9746 35.95 15.5848 39.55 19.9973 39.55C21.8024 39.55 23.5072 38.95 24.9112 37.85L28.6217 41.55L30.0257 40.05ZM19.9973 37.55C16.6879 37.55 13.9803 34.85 13.9803 31.55C13.9803 28.25 16.6879 25.55 19.9973 25.55C23.3067 25.55 26.0143 28.25 26.0143 31.55C26.0143 34.85 23.3067 37.55 19.9973 37.55Z"/>
                         </svg>                        
                     </a>
@@ -148,43 +148,24 @@
         <h2 class="result-title">Найдено гостиниц: 38</h2>
         <select class="result-select sort-select">
           <option value="cheap">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
+          <option value="expensive">Сначала дорогие</option>   
         </select>
+        <svg class="arrow-select" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.21967 7.34467C4.51256 7.05178 4.98744 7.05178 5.28033 7.34467L10 12.0643L14.7197 7.34467C15.0126 7.05178 15.4874 7.05178 15.7803 7.34467C16.0732 7.63756 16.0732 8.11244 15.7803 8.40533L10.5303 13.6553C10.2374 13.9482 9.76256 13.9482 9.46967 13.6553L4.21967 8.40533C3.92678 8.11244 3.92678 7.63756 4.21967 7.34467Z"/>
+        </svg>
         <ul class="view list-reset">
-          <li class="view-item view-item-current">
-            <a href="#" class="view-button view-button-tile">
-              <svg class="view-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 0H0V6H4V0Z" fill="black"/>
-                <path d="M16 0H12V6H16V0Z" fill="black"/>
-                <path d="M10 0H6V6H10V0Z" fill="black"/>
-                <path d="M4 8H0V14H4V8Z" fill="black"/>
-                <path d="M16 8H12V14H16V8Z" fill="black"/>
-                <path d="M10 8H6V14H10V8Z" fill="black"/>
-                </svg>
+          <li class="view-item">
+            <a href="#" class="view-button view-button-tile view-button-current">
               <span class="visually-hidden"></span>
             </a>
           </li>
           <li class="view-item">
             <a href="#" class="view-button view-button-slideshow">
-              <svg class="view-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 12H0V14H16V12Z" fill="black"/>
-                <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
-                </svg>
               <span class="visually-hidden"></span>
             </a>
           </li>
           <li class="view-item">
             <a href="#" class="view-button view-button-list">
-              <svg class="view-icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 0H0V2H2V0Z" fill="black"/>
-                <path d="M16 0H4V2H16V0Z" fill="black"/>
-                <path d="M2 4H0V6H2V4Z" fill="black"/>
-                <path d="M16 4H4V6H16V4Z" fill="black"/>
-                <path d="M2 8H0V10H2V8Z" fill="black"/>
-                <path d="M16 8H4V10H16V8Z" fill="black"/>
-                <path d="M2 12H0V14H2V12Z" fill="black"/>
-                <path d="M16 12H4V14H16V12Z" fill="black"/>
-                </svg>                
               <span class="visually-hidden"></span>
             </a>
           </li>
@@ -305,6 +286,9 @@
             <option value="4">4</option>
             <option value="6">6</option>
           </select>
+          <svg class="quantity-select-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.21967 7.34467C4.51256 7.05178 4.98744 7.05178 5.28033 7.34467L10 12.0643L14.7197 7.34467C15.0126 7.05178 15.4874 7.05178 15.7803 7.34467C16.0732 7.63756 16.0732 8.11244 15.7803 8.40533L10.5303 13.6553C10.2374 13.9482 9.76256 13.9482 9.46967 13.6553L4.21967 8.40533C3.92678 8.11244 3.92678 7.63756 4.21967 7.34467Z"/>
+          </svg>   
         </div> 
       </section>
     </main>
@@ -321,17 +305,24 @@
         <ul class="social-list list-reset">
           <li class="social-item"> 
             <a class="social-link social-link-twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">
-              <img src="images/twitter.svg" alt="Twitter" height="15" width="18">
+              <svg class="social-link-logo" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.6 0.200056C13.4 -0.299944 14.8 0.500056 15.4 1.40006C16.1 1.20006 16.8 0.900056 17.5 0.700056C17.5 1.60006 16.9 2.20006 16.6 2.50006C17.3 2.60006 18 1.90006 18 1.90006C17.8 2.90006 16.9 3.70006 16.3 3.90006C16.1 10.7001 13 15.1001 5.7 15.0001C5.1 15.0001 5.8 15.0001 5.2 15.0001C4.8 15.0001 0.8 14.5001 0 13.1001C2.4 13.3001 4.1 12.7001 5 11.9001C4 11.6001 2.1 11.5001 1.8 9.00006C2.2 9.10006 2.4 9.20006 3.1 9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006 0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z"/>
+                </svg>
             </a>
           </li>
           <li class="social-item"> 
            <a class="social-link social-link-facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
-              <img src="images/facebook.svg" alt="Facebook" height="16" width="10" >
+            <svg class="social-link-logo" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z"/>
+              </svg>
             </a>
           </li>
           <li class="social-item">
             <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-              <img src="images/youtube.svg" alt="YouTube" height="16" width="20">
+              <svg class="social-link-logo" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z"/>
+                </svg>
+                
             </a> 
           </li>
         </ul>
