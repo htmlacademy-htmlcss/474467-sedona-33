@@ -392,10 +392,10 @@ a{
     background-color:#E6E6E6;
     outline: 3px solid #83B3D3;
 }
-.subscribe-input:invalid{
+/*.subscribe-input:invalid{
     background: #FFFFFF;
     outline: 2px solid #FF5757;
-}
+}*/
 /* subscribe-input-error добавляется при ошибке ввода данных*/
 .subscribe-input-error{
     background: #FFFFFF;
@@ -909,13 +909,15 @@ a{
     background-color: rgba(255, 255, 255, 0.3);
 }
     
-.filter-label:focus .control-mark {
+.filter-check-input:focus + .control-mark{
     background-color: rgba(255, 255, 255, 0.6);
     outline: 3px solid #83B3D3;
     border-radius: 4px;
 }
-  
-  .control-input:disabled + .control-mark {
+.filter-radio-input:focus + .control-mark{
+    outline: 3px solid #83B3D3;
+}
+.control-input:disabled + .control-mark {
     border-color: #242424;
   }
 .filter-price {
