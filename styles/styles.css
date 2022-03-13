@@ -69,12 +69,11 @@ img {
 }
 .button:active{
     background-color: #68A2CA;
-    color: #FFFFFF;
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
 }
 .button:focus{
     background-color:  #68A2CA;
-    border: 3px solid #756257; 
+    outline: 3px solid #756257; 
 }
 a{
     text-decoration: none;
@@ -196,13 +195,10 @@ a{
 }
 .menu-item-button:active{
     background-color: #615048;
-    color: #FFFFFF;
-    opacity: 0.3;
 }
 .menu-item-button:focus{
     outline: 3px solid #83B3D3;
     background-color: #615048;
-    border:none;
 }
 /* index */
 .sedona-img{
@@ -351,12 +347,11 @@ a{
 }
 .search-button:active{
     background-color: #615048;
-    color: #FFFFFF;
-    opacity: 0.3;
 }
 .search-button:focus{
     border: 3px solid #83B3D3;
     background-color: #615048;
+    outline: none;
 }
 /* subscribe */
 .subscribe {
@@ -398,6 +393,12 @@ a{
     outline: 3px solid #83B3D3;
 }
 .subscribe-input:invalid{
+    background: #FFFFFF;
+    outline: 2px solid #FF5757;
+}
+/* subscribe-input-error добавляется при ошибке ввода данных*/
+.subscribe-input-error{
+    background: #FFFFFF;
     outline: 2px solid #FF5757;
 }
 .button-subscribe{
@@ -442,8 +443,8 @@ a{
     grid-template-columns: auto 1fr auto;
 }
 .contacts a:focus{
-    border: 2px solid #68A2CA;
-    border-radius: 4px;
+    outline: 2px solid #83b3d3;
+    border-radius: 10px;
 }
 .social-list{
     display: grid;
@@ -487,8 +488,6 @@ a{
 }
 .contacts-phone:focus{
     color: #756257;
-    outline: 3px solid #83B3D3;
-    border-radius: 10px;
 }
 .logo-html{
     display: block;
@@ -497,17 +496,15 @@ a{
 .logo-html-icon{
     fill: #000000;
 }
-.logo-html-icon:hover{
+.logo-html:hover svg{
     fill: #756257;
 }
-.logo-html-icon:active{
+.logo-html:active svg{
     fill: #756257;
     opacity: 0.3;
 }
-.logo-html-icon:focus{
+.logo-html:focus svg{
     fill: #756257;
-    outline: 3px solid #83B3D3;  
-    border-radius: 10px;
 }
 /*Модальное окно*/
 .modal-container {
@@ -526,14 +523,15 @@ a{
 }
 .modal {
     position: relative;
-    padding: 70px;
+    width: 715px;
+    margin: auto;
+    padding: 34px 70px 70px;
     background-color: #ffffff;
     border-radius: 30px;
-    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
-    width: 715px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   }
 .modal-title{
-    margin-top: -8px;
+    padding-right: 60px;
     font-size: 30px;
     line-height: 40px;
     text-transform: uppercase;
@@ -549,7 +547,6 @@ a{
     background-image: url("../images/close.svg");
     background-repeat: no-repeat;
     background-position: center;
-    border: none;
     border: 3px solid transparent;
     border-radius: 50%;
     cursor: pointer;
@@ -559,6 +556,8 @@ a{
 }
 .modal-close-button:active{
     background-color: #E6E6E6;
+}
+.modal-close-button:active svg{
     opacity: 0.3;
 }
 .modal-close-button:focus{
@@ -571,28 +570,36 @@ a{
     font-size: 18px;
     line-height: 40px;
 }
+.modal-form {
+    padding-top: 36px;
+  }
 .modal input{
-  height: 50px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 40px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  background: #f2f2f2;
-  border: none;
-  border-radius: 4px;
-  appearance: none;
+    height: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    background: #f2f2f2;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    appearance: none;
 }
 .modal input:hover{
-    background-color:#E6E6E6;;
+    background-color:#E6E6E6;
 }
 .modal input:focus{
     background-color: #ffffff;
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
 }
+.modal input:active {
+    border: 2px solid #000000;
+    background: #FFFFFF;
+  }
 .form-container{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 6px;
 }
 .form-container-input{
     position: relative;
@@ -600,7 +607,7 @@ a{
 .form-input{
     min-width: 420px;
     padding-left: 19px;
-    padding-right: 18px;
+    padding-right: 55px;
 }
 .calendar-button{
     opacity: 0.3;
@@ -637,19 +644,19 @@ a{
     margin: 0;
 }
 .plus-minus-button{
-    height: 25px;
-    width: 25px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    opacity: 0.3;
+    position: absolute;
+    top: 13px;
     z-index: 1;
     align-items: center;
-    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    opacity: 0.3;
 }
 .plus-button{
     right: 10px;
-    top:13px;
     background-image: url("../images/plus.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -657,7 +664,6 @@ a{
 }
 .minus-button{
     right:95px;
-    top: 13px;
     background-image: url("../images/minus.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -682,9 +688,11 @@ a{
 }
 .form-input-guest{
     width: 133px;
+    padding: 0 50px;
     text-align: center;
 }
 .tooltip {
+    position: relative;
     display: block;
     margin-top: 10px;
 }
@@ -759,19 +767,19 @@ a{
     color: #ffffff;
     text-transform: uppercase;
     background: #83b3d3;
-    border: 3px solid transparent;
+    border: none;
     border-radius: 10px;
 }
 .modal-search-button:hover{
     background-color: #68A2CA;
 }
 .modal-search-button:active{
-    opacity: 0.3;
+    color:rgba(255, 255, 255, 0.3);
     background-color: #68A2CA;
 }
 .modal-search-button:focus{
     background: #68A2CA;
-    border: 3px solid #756257;
+    outline: 3px solid #756257;
 }
 /* Catalog */
 .filter-section {
@@ -826,13 +834,13 @@ a{
 .breadcrumbs-link-home svg {
     fill: #ffffff;
 }
-.breadcrumbs-link:hover, .breadcrumbs-link-home:hover svg{
+.breadcrumbs-link:hover{
     opacity: 0.6;
 }
-.breadcrumbs-link:active, .breadcrumbs-link-home:active svg{
+.breadcrumbs-link:active{
     opacity: 30%;
 } 
-.breadcrumbs-link:focus, .breadcrumbs-link-home:focus svg{
+.breadcrumbs-link:focus{
     border: 3px solid #83b3d3;
     border-radius: 4px;
 }
@@ -894,6 +902,22 @@ a{
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
+.filter-label:hover .control-mark {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.filter-label:active .control-mark {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+    
+.filter-label:focus .control-mark {
+    background-color: rgba(255, 255, 255, 0.6);
+    outline: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+  
+  .control-input:disabled + .control-mark {
+    border-color: #242424;
+  }
 .filter-price {
     margin-right: 77px;
     margin-left: auto;
@@ -921,6 +945,15 @@ a{
     color: #ffffff;
     background: transparent;
     border: 2px solid #ffffff;
+}
+.filter-price-input:hover{
+    border-color: rgba(255, 255, 255, 0.6);
+}
+.filter-price-input:focus{
+    box-shadow: 0px 0px 0px 3px #81B3D2;
+}
+.filter-price-input:active{
+    background: #756257;
 }
 .filter-price-input-min {
     border-radius: 4px 0 0 4px;
@@ -976,7 +1009,15 @@ a{
 .filter-toggle-max {
     right: 50px;
 }  
-  .filter-button {
+.filter-toggle:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.filter-toggle:active,
+.filter-toggle:focus {
+    outline: 3px solid #83B3D3;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+} 
+.filter-button {
     display: flex;
     flex-direction: column;
     padding-top: 61px;
@@ -986,8 +1027,10 @@ a{
     margin-bottom: 17px;
     padding: 10px;
     line-height: 21px;
-    border: 3px solid transparent;
 }
+.filter-submit:focus {
+    outline: 3px solid #ffffff;
+  }
 .filter-reset {
     align-self: center;
     padding: 3px 14px 6px;
@@ -1000,6 +1043,15 @@ a{
     background: none;
     border: none;
     border-radius: 4px;
+}
+.filter-reset:hover{
+    color:rgba(255, 255, 255, 0.6);
+}
+.filter-reset:active{
+   color: rgba(255, 255, 255, 0.3);
+}
+.filter-reset:focus{
+    outline: 3px solid #83B3D3;
 }
 .result {
     position: relative;
@@ -1104,7 +1156,7 @@ a{
     opacity: 0.3;
   }
 .hotels-img:focus {
-    border: 3px solid #83b3d3;
+    outline: 3px solid #83b3d3;
 }
 .hotels-title {
     margin-top: 16px;
@@ -1142,9 +1194,7 @@ a{
     background-color: #615048;
 } 
 .hotels-button-detail:active {
-    color: #ffffff;
     background-color: #615048;
-    opacity: 0.3;
 }
 .hotels-button-detail:focus {
     background-color: #615048;
@@ -1236,9 +1286,8 @@ a{
     background-color: #68a2ca;
 } 
 .pagination-button:active {
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.3);
     background-color: #68a2ca;
-    opacity: 0.3;
 }
 .pagination-button:focus {
     background-color: #68a2ca;
