@@ -50,7 +50,7 @@
         <h1 class="page-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs-list list-reset">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link-home" href="index.html"> 
+              <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html"> 
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6 0L0 5.80006V12.0001H12V5.80006L6 0ZM11 11.0001H1V6.20005L6 1.4L11 6.20005V11.0001Z" />
                   <path d="M4 10.0001H5V7.50005H7V10.0001H8V6.50005H4V10.0001Z" />
@@ -81,7 +81,7 @@
                   </li>
                   <li class="filter-item">
                     <label class="filter-label">
-                      <input class="filter-check-input visually-hidden" type="checkbox" name="Wi-Fi">
+                      <input class="filter-check-input visually-hidden filter-control-input" type="checkbox" name="Wi-Fi">
                       <span class="control-mark"></span>
                       <span class="control-label">Wi-Fi</span>
                     </label>
@@ -165,7 +165,7 @@
       <section class="hotels">
         <ul class="hotels-list list-reset">
          <li class="hotels-item">
-                <a class="hotels-img">
+                <a class="hotels-img" href="#">
                   <img src="images/hotel1.jpg" alt="Amara Resort & Spa" width="300" height="206">
                 </a>
                 <h2 class="hotels-title">Amara Resort & Spa</h2>
@@ -185,7 +185,7 @@
                 </div>
          </li>
          <li class="hotels-item">
-                <a class="hotels-img">
+                <a class="hotels-img" href="#">
                 <img src="images/hotel2.jpg" alt="Desert Quail Inn" width="300" height="206">
                 </a>
               <h2 class="hotels-title">Desert Quail Inn</h2>
@@ -205,7 +205,7 @@
                 </div>
         </li>
           <li class="hotels-item">
-                  <a class="hotels-img">
+                  <a class="hotels-img" href="#">
                   <img src="images/hotel3.jpg" alt="Villas at Poco Diablo" width="300" height="206">
                   </a>
                 <h2 class="hotels-title">Villas at Poco Diablo</h2>
@@ -225,7 +225,7 @@
                   </div>
           </li>
           <li class="hotels-item">
-                      <a class="hotels-img">
+                      <a class="hotels-img" href="#">
                       <img src="images/hotel4jpg.jpg" alt="GreenTree Inn" width="300" height="206">
                       </a>
                     <h2 class="hotels-title">GreenTree Inn</h2>
@@ -285,7 +285,7 @@
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post" class="subscribe-form">
-              <input type="email" name="Email" id="" placeholder="Ваш e-mail"  class="subscribe-input">
+              <input type="email" name="Email" id="" required placeholder="Ваш e-mail"  class="subscribe-input">
              <button class="button button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
