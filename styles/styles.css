@@ -14,11 +14,12 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
-  *, 
+*,
 ::after,
-::before {
-        box-sizing: border-box;
+::before{
+    box-sizing: border-box;
 }
+
   /* Body */
 body {
     font-family: "PT Sans", "Arial", sans-serif;
@@ -33,9 +34,9 @@ body {
     width: 1200px;
   }
 html {
-    box-sizing: border-box;
     height: 100%;
     background-color: #E5E5E5;
+    box-sizing: border-box;
 }
   /* main */
 .main {
@@ -45,9 +46,8 @@ html {
   }
 img {
     max-width: 100%;
-    height: auto;
     object-fit: cover;
-    object-position: center;
+
 }
 .button {
     font-size: 16px;
@@ -75,9 +75,7 @@ img {
     background-color:  #68A2CA;
     outline: 3px solid #756257; 
 }
-a{
-    text-decoration: none;
-}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -133,6 +131,7 @@ a{
     font-weight: 700;
     position: relative;
     display: block;
+    text-decoration: none;
 }
 .menu-link-current::after{
     display: block;
@@ -213,6 +212,8 @@ a{
     padding-bottom: 81px;
     display: block;
     margin: 0 auto;
+    object-position:center;
+    height: auto;
 }
 
 .sedona-description{
@@ -278,6 +279,8 @@ a{
 .canvas-blue{
     background-color: #83B3D3;
     color: #ffffff;
+    padding-left: 90px;
+    padding-right: 90px;
 }
 .canvas-light{
     background-color: rgba(131, 179, 211, 0.2);
@@ -478,6 +481,7 @@ a{
     font-size: 40px;
     line-height: 40px;
     color: #000000;
+    text-decoration: none;
 }
 .contacts-phone:hover{
     color: #756257;
