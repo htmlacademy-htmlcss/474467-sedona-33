@@ -264,6 +264,8 @@ img {
     background-image: url("../images/home.svg");
     background-repeat: no-repeat;
     background-position: center 89px;
+    padding-left: 105px;
+    padding-right: 105px;
 }
 .reason-canvas-food{
     background: #ffffff;
